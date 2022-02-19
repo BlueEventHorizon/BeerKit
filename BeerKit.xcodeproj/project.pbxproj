@@ -14,14 +14,13 @@
 		2823530D21EF36F7000E527C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2823530B21EF36F7000E527C /* LaunchScreen.storyboard */; };
 		2867480B21F070E900B536D1 /* BeerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 28E6523121F06D8700A5AED0 /* BeerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28E6522821F02D4000A5AED0 /* MessageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6522721F02D4000A5AED0 /* MessageEntity.swift */; };
-		28E6523421F06D8700A5AED0 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6522C21F06D8700A5AED0 /* Session.swift */; };
-		28E6523521F06D8700A5AED0 /* Advertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6522D21F06D8700A5AED0 /* Advertiser.swift */; };
-		28E6523621F06D8700A5AED0 /* Transceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6522E21F06D8700A5AED0 /* Transceiver.swift */; };
-		28E6523721F06D8700A5AED0 /* EventEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6522F21F06D8700A5AED0 /* EventEntity.swift */; };
-		28E6523821F06D8700A5AED0 /* BeerKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6523021F06D8700A5AED0 /* BeerKit.swift */; };
-		28E6523A21F06D8700A5AED0 /* Browser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6523221F06D8700A5AED0 /* Browser.swift */; };
+		28E6523421F06D8700A5AED0 /* PearConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6522C21F06D8700A5AED0 /* PearConnection.swift */; };
+		28E6523521F06D8700A5AED0 /* PearAdvertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6522D21F06D8700A5AED0 /* PearAdvertiser.swift */; };
+		28E6523821F06D8700A5AED0 /* NearPeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6523021F06D8700A5AED0 /* NearPeer.swift */; };
+		28E6523A21F06D8700A5AED0 /* PearBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6523221F06D8700A5AED0 /* PearBrowser.swift */; };
 		28E6523C21F06FA000A5AED0 /* BeerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282352F121EF36BB000E527C /* BeerKit.framework */; };
 		28E6523D21F06FA000A5AED0 /* BeerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 282352F121EF36BB000E527C /* BeerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		768A21DD26864F3C00F3ABEE /* EventEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6522F21F06D8700A5AED0 /* EventEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,13 +58,12 @@
 		2823530E21EF36F7000E527C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28E6522721F02D4000A5AED0 /* MessageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageEntity.swift; sourceTree = "<group>"; };
 		28E6522921F06B9300A5AED0 /* BeerKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BeerKit.podspec; sourceTree = SOURCE_ROOT; };
-		28E6522C21F06D8700A5AED0 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		28E6522D21F06D8700A5AED0 /* Advertiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advertiser.swift; sourceTree = "<group>"; };
-		28E6522E21F06D8700A5AED0 /* Transceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transceiver.swift; sourceTree = "<group>"; };
+		28E6522C21F06D8700A5AED0 /* PearConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearConnection.swift; sourceTree = "<group>"; };
+		28E6522D21F06D8700A5AED0 /* PearAdvertiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearAdvertiser.swift; sourceTree = "<group>"; };
 		28E6522F21F06D8700A5AED0 /* EventEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEntity.swift; sourceTree = "<group>"; };
-		28E6523021F06D8700A5AED0 /* BeerKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerKit.swift; sourceTree = "<group>"; };
+		28E6523021F06D8700A5AED0 /* NearPeer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearPeer.swift; sourceTree = "<group>"; };
 		28E6523121F06D8700A5AED0 /* BeerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerKit.h; sourceTree = "<group>"; };
-		28E6523221F06D8700A5AED0 /* Browser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Browser.swift; sourceTree = "<group>"; };
+		28E6523221F06D8700A5AED0 /* PearBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearBrowser.swift; sourceTree = "<group>"; };
 		28E6523321F06D8700A5AED0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				2823530221EF36F6000E527C /* AppDelegate.swift */,
+				28E6522F21F06D8700A5AED0 /* EventEntity.swift */,
 				2823530421EF36F6000E527C /* ViewController.swift */,
 				28E6522721F02D4000A5AED0 /* MessageEntity.swift */,
 				2823530621EF36F6000E527C /* Main.storyboard */,
@@ -125,12 +124,10 @@
 			isa = PBXGroup;
 			children = (
 				28E6523121F06D8700A5AED0 /* BeerKit.h */,
-				28E6523021F06D8700A5AED0 /* BeerKit.swift */,
-				28E6522C21F06D8700A5AED0 /* Session.swift */,
-				28E6522D21F06D8700A5AED0 /* Advertiser.swift */,
-				28E6522E21F06D8700A5AED0 /* Transceiver.swift */,
-				28E6523221F06D8700A5AED0 /* Browser.swift */,
-				28E6522F21F06D8700A5AED0 /* EventEntity.swift */,
+				28E6523021F06D8700A5AED0 /* NearPeer.swift */,
+				28E6522C21F06D8700A5AED0 /* PearConnection.swift */,
+				28E6522D21F06D8700A5AED0 /* PearAdvertiser.swift */,
+				28E6523221F06D8700A5AED0 /* PearBrowser.swift */,
 				28E6523321F06D8700A5AED0 /* Info.plist */,
 			);
 			path = BeerKit;
@@ -250,12 +247,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28E6523621F06D8700A5AED0 /* Transceiver.swift in Sources */,
-				28E6523821F06D8700A5AED0 /* BeerKit.swift in Sources */,
-				28E6523A21F06D8700A5AED0 /* Browser.swift in Sources */,
-				28E6523521F06D8700A5AED0 /* Advertiser.swift in Sources */,
-				28E6523421F06D8700A5AED0 /* Session.swift in Sources */,
-				28E6523721F06D8700A5AED0 /* EventEntity.swift in Sources */,
+				28E6523821F06D8700A5AED0 /* NearPeer.swift in Sources */,
+				28E6523A21F06D8700A5AED0 /* PearBrowser.swift in Sources */,
+				28E6523521F06D8700A5AED0 /* PearAdvertiser.swift in Sources */,
+				28E6523421F06D8700A5AED0 /* PearConnection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +261,7 @@
 				2823530521EF36F6000E527C /* ViewController.swift in Sources */,
 				2823530321EF36F6000E527C /* AppDelegate.swift in Sources */,
 				28E6522821F02D4000A5AED0 /* MessageEntity.swift in Sources */,
+				768A21DD26864F3C00F3ABEE /* EventEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

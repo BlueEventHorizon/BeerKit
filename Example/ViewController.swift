@@ -14,35 +14,46 @@ class ViewController: UIViewController {
     @IBOutlet weak var deviceNameLabel: UILabel!
     
     var messages: [MessageEntity] = []
+    var beerKit: NearPeer = NearPeer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.dataSource = self
         
-        BeerKit.onConnect { (myPeerId, peerId) in
+        beerKit.start(serviceType: "BeerDemo", displayName: UIDevice.current.name)
+        
+        beerKit.onConnect { peerId in
             DispatchQueue.main.async {
                 self.deviceNameLabel.text = peerId.displayName
             }
         }
-        
-        BeerKit.onEvent("message") { (peerId, data) in
-            guard let data = data,
-                let message = try? JSONDecoder().decode(MessageEntity.self, from: data) else {
-                    return
-            }
-            self.messages.append(message)
+    
+        beerKit.onRecieved { (peerId, data) in
             
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
+            guard let data = data else { return }
+            
+            if let decoded = try? JSONDecoder().decode(EventEntity.self, from: data) {
+                
+                guard let data = decoded.data, let message = try? JSONDecoder().decode(MessageEntity.self, from: data) else {
+                    return
+                }
+    
+                self.messages.append(message)
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             }
         }
     }
     
     @IBAction func sayHiButtonTapped(_ sender: Any) {
-        let message = MessageEntity(name: UIDevice.current.name, message: "Hi")
+        let message = MessageEntity(name: UIDevice.current.name, message: "Oh my God!")
         let data: Data = try! JSONEncoder().encode(message)
-        BeerKit.sendEvent("message", data: data)
+        let entity = EventEntity(event: "message", data: data)
+        let encoded: Data = try! JSONEncoder().encode(entity)
+        beerKit.sendData(encoded)
     }
 }
 
